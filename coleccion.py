@@ -20,29 +20,25 @@ class Coleccion():
         self.__coleccion = {}
 
     # selectoras
-    def elemento(c, k):
+    def elemento(self, k):
         """
         Devuelve el elemento cuya clave es k de la colección c.
 
         Lanza una excepción KeyError si la clave k no está en c.
         """
-        return c[k]
+        return self.__coleccion[k]
 
     # Mutadoras
-    def insertar(c, k, e):
+    def set_elemento(self, k, e):
         """
-        Inserta en la colección c el elemento e con la clave k.
-
-        Lanza una excepción KeyError si la clave k ya existe en c.
+        Inserta el elemento e con la clave k.
         """
-        if k in c:
-            raise KeyError('La clave ya existe en la colección.')
-        c[k] = e
+        self.__coleccion[k] = e
 
-    def quitar(c, k):
+    def del_elemento(self, k):
         """
         Quita de la colección c el elemento con clave k.
 
         Lanza una excepción KeyError si la clave k no existe en c.
         """
-        del c[k]
+        del self.__coleccion[k]
