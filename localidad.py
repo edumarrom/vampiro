@@ -1,3 +1,6 @@
+from conexion import Conexion
+
+
 class Localidad:
     def __init__(self, corta, larga, conexiones):
         self.set_corta(corta)
@@ -20,4 +23,5 @@ class Localidad:
         return self.__conexiones
 
     def set_conexiones(self, conexiones):
-        self.__conexiones = conexiones
+        for  k, v in conexiones.items():
+            self.__conexiones.set_elemento(k, Conexion(k, v))

@@ -24,7 +24,7 @@ class Coleccion():
         """
         Devuelve el elemento cuya clave es k de la colección c.
 
-        Lanza una excepción KeyError si la clave k no está en c.
+        Lanza una excepción KeyError si la clave k no está.
         """
         return self.__coleccion[k]
 
@@ -37,8 +37,8 @@ class Coleccion():
 
     def del_elemento(self, k):
         """
-        Quita de la colección c el elemento con clave k.
+        Quita el elemento con clave k.
 
-        Lanza una excepción KeyError si la clave k no existe en c.
+        Lanza una excepción KeyError si la clave k no existe.
         """
         del self.__coleccion[k]
