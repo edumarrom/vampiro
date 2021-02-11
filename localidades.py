@@ -30,11 +30,7 @@ datos_localidad = {
 for clave, loc in datos_localidad.items():
     coleccion.insertar(_localidades, clave, loc)
 
-"""
-Cocina --- Mitad pasillo --- Biblioteca
-                |
-            Vestíbulo
-"""
+
 
 _conexiones = {
     VESTIBULO: {

@@ -1,3 +1,6 @@
+"""
+¿Qué hace exactamente conexion?
+"""
 class Conexion:
     def __init__(self, direccion, destino):
         self.__direccion = direccion
